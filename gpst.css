@@ -86,15 +86,15 @@ nav a:hover {
 }
 
 #heroHome {
-  background-image: url("/Users/28MarkusT/Desktop/WebDev:NTWK/Module 5/GPST_CaseStudy_Images/sunsetHorse.png");
+  background-image: url("images/sunsetHorse.png");
 }
 
 #heroBoard {
-  background-image: url("/Users/28MarkusT/Desktop/WebDev:NTWK/Module 5/GPST_CaseStudy_Images/fenceline.png");
+  background-image: url("images/fenceline.png");
 }
 
 #heroTraining {
-  background-image: url("/Users/28MarkusT/Desktop/WebDev:NTWK/Module 5/GPST_CaseStudy_Images/BayBella.png");
+  background-image: url("images/BayBella.png");
 }
 
 main {
