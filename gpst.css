@@ -86,15 +86,15 @@ nav a:hover {
 }
 
 #heroHome {
-  background-image: url("images/sunsetHorse.png");
+  background-image: url("Images/sunsetHorse.png");
 }
 
 #heroBoard {
-  background-image: url("images/fenceline.png");
+  background-image: url("Images/fenceline.png");
 }
 
 #heroTraining {
-  background-image: url("images/BayBella.png");
+  background-image: url("Images/BayBella.png");
 }
 
 main {
