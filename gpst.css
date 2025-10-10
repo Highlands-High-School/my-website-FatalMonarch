@@ -1,0 +1,120 @@
+header,
+main,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+  display: block;
+}
+
+#contact {
+  font-size: 90%;
+}
+
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: inline;
+}
+
+@media only screen and (max-width: 64em) {
+  body {
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  #wrapper {
+    min-width: 0;
+    width: auto;
+    box-shadow: none;
+    border: none;
+  }
+
+  header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    height: auto;
+  }
+
+  h1 {
+    letter-spacing: 0.1em;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  nav {
+    float: none;
+    width: auto;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    display: inline;
+    padding: 0.25em 0.75em;
+  }
+
+  #heroHome,
+  #heroBoard,
+  #heroTraining {
+    margin-left: 0;
+    height: 200px;
+  }
+
+  footer {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  main {
+    padding: 0.1em 1em;
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+    border-bottom: 2px solid #330000;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  #heroHome,
+  #heroBoard,
+  #heroTraining {
+    background-image: none;
+    height: 0;
+  }
+
+  #mobile {
+    display: inline;
+  }
+
+  #desktop {
+    display: none;
+  }
+}
