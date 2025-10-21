@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.intro-page {
+  background-image: url("introbackground.jpg");
+}
+
+body.responses-page {
+  background-image: url("responsesbackground.png");
+}
+
+body.walloffame-page {
+  background-image: url("walloffamebackground.jpg");
+}
+
+body.handbook-page {
+  background-image: url("handbookbackground.jpg");
+}
+
+body.budget-page {
+  background-image: url("budgetbackground.jpg");
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: auto;
+}
+
+.top-left h2 {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: purple;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav ul li {
+  padding: 8px;
+}
+
+nav ul li a {
+  font-family: "Century Gothic", sans-serif;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e0b3ff;
+}
+
+.heading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading h1 {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 2em;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.site-logo {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  width: 300px;
+  height: auto;
+  z-index: 1000;
+  filter: drop-shadow(0 0 6px rgba(180, 100, 255, 0.6));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.site-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(200, 120, 255, 0.9));
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  margin-top: 20px;
+}
+
+.placeholder {
+  border: 2px solid white;
+  width: clamp(200px, 33vw, 420px);
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  display: block;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.form-access,
+.content-box,
+.card,
+.article {
+  border: 2px solid white;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: "Century Gothic", sans-serif;
+  margin-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #bbb;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  border-top: 1px solid #555;
+  width: 100%;
+}
+
+footer a {
+  color: #c59aff;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer p {
+  margin: 5px 0;
+}
